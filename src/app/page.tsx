@@ -1,3 +1,4 @@
+import AddClass from "@/components/addclass";
 import Class from "@/components/class";
 import Term from "@/components/term";
 import { ChevronRight } from "@deemlol/next-icons";
@@ -23,6 +24,7 @@ export default function Home() {
               <Class/>
               <Class/>
               <Class/>
+              <AddClass/>
             </div>
           </div>
           <div className="md:col-span-1 grid gap-5 content-start">
