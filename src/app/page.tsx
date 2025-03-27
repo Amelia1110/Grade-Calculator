@@ -2,8 +2,12 @@ import AddClass from "@/components/addclass";
 import Class from "@/components/class";
 import Term from "@/components/term";
 import { ChevronRight } from "@deemlol/next-icons";
+import { getClasses, getTerms } from "@/lib/data"
 
-export default function Home() {
+export default async function Home() {
+  const terms = await getTerms();
+  const classes = await getClasses();
+
   return (
     <div className="w-full h-full">
       <main className="w-full h-full">
@@ -19,21 +23,18 @@ export default function Home() {
                 <ChevronRight size={32}/>
             </div>
             <div className="flex overflow-auto no-scrollbar md:grid md:grid-cols-3 gap-y-5 gap-x-6 w-full">
-              <Class/>
-              <Class/>
-              <Class/>
-              <Class/>
-              <Class/>
+              {classes.map((classes) => 
+                <Class key={classes.class_name} name={classes.class_name}/>
+              )}
               <AddClass/>
             </div>
           </div>
           <div className="md:col-span-1 grid gap-5 content-start">
             <h1 className="font-bold text-2xl">All Terms</h1>
             <div className="grid content-start gap-4 w-full ">
-              <Term/>
-              <Term/>
-              <Term/>
-              <Term/>
+              {terms.map((term) => 
+                <Term key={term.term_name} name={term.term_name}/>
+              )}
             </div>
           </div>
         </div>

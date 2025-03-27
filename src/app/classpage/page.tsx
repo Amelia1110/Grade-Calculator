@@ -1,6 +1,4 @@
 import AddClass from "@/components/addclass";
-import Class from "@/components/class";
-import Term from "@/components/term";
 import { ChevronRight, Edit } from "@deemlol/next-icons";
 
 export default function ClassPage() {
@@ -21,21 +19,12 @@ export default function ClassPage() {
                         <ChevronRight size={32}/>
                     </div>
                     <div className="flex overflow-auto no-scrollbar md:grid md:grid-cols-3 gap-y-5 gap-x-6 w-full">
-                    <Class/>
-                    <Class/>
-                    <Class/>
-                    <Class/>
-                    <Class/>
                     <AddClass/>
                     </div>
                 </div>
                 <div className="md:col-span-1 grid gap-5 content-start">
                     <h1 className="font-bold text-2xl">Placeholder <span className="text-neutral-400">- XX%</span></h1>
                     <div className="grid content-start gap-4 w-full ">
-                    <Term/>
-                    <Term/>
-                    <Term/>
-                    <Term/>
                     </div>
                 </div>
                 </div>
