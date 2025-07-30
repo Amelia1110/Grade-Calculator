@@ -7,7 +7,7 @@ export default function ClassPage() {
     const [assessmentTypes, setAssessmentTypes] = useState<any>();
 
     useEffect(() => {
-        axios.get('https://grade-calculator-onxm.onrender.com/assessment-types/')
+        axios.get('https://grade-calculator-onxm.onrender.com/api/assessment-types/')
             .then((res: any) => {
                 let data = res.data;
                 setAssessmentTypes(data);
