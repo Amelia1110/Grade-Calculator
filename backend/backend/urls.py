@@ -20,5 +20,5 @@ from api.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('assessment-types/', AssessmentTypeView.as_view(), name="anything")
+    path('api/assessment-types/', AssessmentTypeView.as_view(), name="anything")
 ]
