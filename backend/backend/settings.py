@@ -23,7 +23,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'grade-calculator-onxm.onrender.com']
 
 
 # Application definition
