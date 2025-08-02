@@ -11,7 +11,9 @@ export default function Header() {
             <div>
                 <Breadcrumb>
                     {breadcrumb.map((item: string) => (
-                        <Breadcrumb.Item>{item}</Breadcrumb.Item>
+                        <Breadcrumb.Item>
+                            <p className="text-lg font-bold">{item}</p>
+                        </Breadcrumb.Item>
                     ))}
                 </Breadcrumb>
             </div>
