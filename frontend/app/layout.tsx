@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={`antialiased h-full`}>
           <BreadcrumbProvider>
             <div className="flex flex-col w-full h-full gap-6 p-8 bg-[url('/backgrounds/bg-1.jpg')] bg-cover bg-center">
-            <Header/>
+              <Header/>
               <div className="w-full h-full p-8 rounded-4xl bg-white/50 backdrop-blur-md ring-1 ring-white/80">
                 {children}
               </div>
